@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><strong>캐나다의 대도시 토론토</strong>
+    <meta charset="utf-8">
+    <title></title>
+   <style>
+     .slide{
+       width:210px;
+       border:2px solid #333;
+       box-shadow:2px 2px 3px #000;
+       float:left;
+       margin-top:30px;
+       margin-right:20px;
+     }
+   </style>
+   <script src="http://code.jquery.com/jquery-3.4.1.js">
+
+   </script>
+   <script>
+   $(document).ready(function(){
+
+     $('#sup').click(function(){
+       $('.slide').slideUp(3000);
+     });
+   $('#sdown').click(function(){
+     $('.slide').slideDown(3000);
+   });
+ });
+   </script>
+  </head>
+  <body>
+    <form>
+      <input type="button" id="sdown" value="정보보이기">
+      <input type="button" id="sup" value="정보가리기">
+
+    </form>
+    <div class="slide">
+      <img src="tr.png" width=200 height=140>
+      </div>
+      <div class="slide">
+      <p>토론토(문화어: 터론터우, 영어: Toronto)는 캐나다에서 가장 큰 도시이며, 북아메리카에서 4번째로 큰 도시이다. 아울러 온타리오주의 주도(州都)이다.
+        </div>
+  </body>
+</html>
